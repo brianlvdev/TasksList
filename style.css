@@ -1,0 +1,125 @@
+:root{
+    --cor-principal:#fbfafc;
+    --font: 'Arial', sans-serif;
+    --font-color:rgb(16, 15, 15);
+}
+
+body {
+    zoom: 1.4;
+    font-size: xx-large;
+    font-family: var(--font);
+    color: var(--font-color);
+    width: min(700px, calc(100%));
+    box-sizing: border-box;
+    margin: 60px auto;
+    padding-inline: 10px;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: #000000;
+    background-color: var(--cor-principal);
+     
+  
+}
+
+li span {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.Adicione{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding:20px 100px 30px;
+    gap: 10px;
+}
+.Adicione input[type="CaixaDeTexto"] {
+    text-align: center;
+    align-self: right;
+    font-size: 20px;
+    background:rgba(214, 213, 213, 0.628);
+    border-style: dotted;
+    border-color: rgb(122, 122, 123);
+    border-radius: 15px;
+    box-sizing: content-box;
+    width: 50%;
+    width: 600px;           
+    height: auto; 
+   
+}
+.Adicione button[type="BotaoAdicionar"]{
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    border-start-end-radius: 20px;
+    border-start-start-radius: 20px;
+    cursor:pointer;
+    font-size: 30px;
+    width: 60px;           
+    height: 60px; 
+    background:rgba(214, 213, 213, 0.628);
+}
+
+.Tarefas button[type="concluido"]{
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    border-start-end-radius: 20px;
+    border-start-start-radius: 20px;
+    padding: 10px;
+    cursor:pointer;
+    font-size: 20px;
+}
+
+.Tarefas button[type="concluido"].concluida {
+    background-color: rgba(103, 168, 238, 0.58);
+}
+
+.Tarefas button[type="concluido"].pendente {
+    background-color: rgba(197, 231, 175, 0.527);
+}
+
+
+button[type="lixo"] {
+    background:rgba(214, 213, 213, 0.628);
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    border-start-end-radius: 20px;
+    border-start-start-radius: 20px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.lixo {
+    flex: 0 0 auto;
+}
+
+
+/*.↩️{
+
+ add algo dps tipo horario data de ciracao?
+   
+}  
+*/  
+.✅{
+    
+    text-transform: lowercase;
+    text-decoration: line-through red;
+    color: rgba(0, 0, 0, 0.458);
+}
+li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    font-size: 35px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-style:groove;
+    border-color:black;
+    border-radius: 8px;
+
+}
+
+ul {
+    padding: 0;
+    list-style:none;
+}
